@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BlackJack Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>♥️♣️Welcome to BlackJack♠️♦️</h1>
+    <div class="main">
+      <div class="section2">
+        <div id="dealer-cards"></div>
+        <h2>Dealer: <span id="dealer-sum"></span></h2>
+        <p id="dealer-score"></p>
+
+        <div class="score">
+          <h2>Player: <span id="player-sum"></span></h2>
+          <p id="player-score"></p>
+        </div>
+
+        <div class="img-container">
+          <div id="player-cards"></div>
+        </div>
+
+        <div>
+          <button type="button"  id="startGame">
+            Start Game
+          </button>
+         </div>
+
+        <div class="player-choice">
+          <button type="button"  id="hit">Hit</button>
+           <button type="button"  id="stand">Stand</button>
+         </div>
+      </div>
+
+      <div class="section1">
+        <h2 class="bet-h2" id="current-balance">Current Balance: $0</h2>
+        <div id="player-money">
+          <label class="pmoney-label" for="depositAmount">Deposit Money</label>
+          <br />
+          <input
+            class="pmoney-input"
+            type="number"
+            id="depositAmount"
+            min="0"
+            step="5"
+          /><br />
+          <button
+            class="pmoney-button"
+            type="button"
+            id="deposit-button"
+            >
+             Deposit
+          </button>
+        </div>
+        <div id="bet">
+           <h2 class="bet-h2" id="bet-total">Bet: $0</h2>
+          <button id="add5" type="button" >+ $5</button>
+           <button id="add20" type="button" >+ $20</button>
+           <button id="add50" type="button" >+ $50</buttononclick="addBet(50)"
+          ><br />
+          <button id="sub5" type="button" >- $5</button>
+           <button id="sub20" type="button" >
+             - $20
+          </button>
+          <button id="sub50" type="button" >
+             - $50
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
